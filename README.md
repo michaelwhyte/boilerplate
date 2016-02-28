@@ -1,2 +1,2 @@
-# boilerplate
+# Boilerplate
 New project boilerplate
