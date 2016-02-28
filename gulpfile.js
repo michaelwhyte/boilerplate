@@ -75,6 +75,11 @@ gulp.task('images', function(){
 
 // Cleaning Tasks
 
+// Clear Cache
+gulp.task('cache:clear', function (callback) {
+	return ca.clearAll(callback)
+});
+
 // Clean Distribution Folder
 gulp.task('clean:dist', function(){
 	return dl.sync(['dist/**/*', '!dist/images', '!dist/images/**/*']);
