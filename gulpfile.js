@@ -77,7 +77,7 @@ gulp.task('images', function(){
 
 // Clear Cache
 gulp.task('cache:clear', function (callback) {
-	return ca.clearAll(callback)
+	return ca.clearAll(callback);
 });
 
 // Clean Distribution Folder
