@@ -19,3 +19,18 @@ h1 {
 	font-family: '20_dbregular', serif;
 	font-size: 60px
 }
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    font-size: 50px;
+    padding: 0 20px;
+    text-decoration: none;
+}
