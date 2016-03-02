@@ -13,6 +13,7 @@ var ca = require('gulp-cache');
 var cc = require('gulp-clean-css');
 var dl = require('del');
 var rs = require('run-sequence');
+var ap = require('gulp-autoprefixer');
 
 // Gulp Tasks
 
@@ -26,6 +27,7 @@ gulp.task('sass', function(){
 	return gulp.src('dev/scss/**/*.scss')
 			.pipe(sm.init())
 			.pipe(sa({outputStyle: 'compressed'}).on('error', sa.logError))
+			.pipe(ap({browsers: ['last 2 versions'], cascade: false}))
 			.pipe(sm.write('./'))
 			.pipe(gulp.dest('dev/css'))
 			.pipe(bs.reload({stream: true}));
